@@ -28,6 +28,12 @@
       "js": ["scripts/content.js"],
       "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/6616.stl"],
+      "matches": ["<all_urls>"]
+    }
   ]
 }
 
