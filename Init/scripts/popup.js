@@ -1,5 +1,5 @@
-import * as THREE from './three.module.js';
-import { GLTFLoader } from './GLTFLoader.js';
+import * as THREE from './scripts/three.module.js';
+import { GLTFLoader } from './scripts/GLTFLoader.js';
 
 // Render Pug.glb in popup using Three.js
 const container = document.getElementById('dog-3d-container');
