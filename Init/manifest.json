@@ -31,9 +31,3 @@
   ]
 }
 
-
-// 1.Create a file for a digital 3-D model dog, animations, and audio of barking that is accessible in the extension screen.
-//2. potray the multimedia pet onto the bottom right corner of the screen.
-//3.Give the multimedia pet the ability to stand, sit, wag tale, bark, and walk in a cirle to lay down, then repeat.
-//4. Add a button to the extension popup that, when clicked, makes the pet perform a random animation and sound.
-//
