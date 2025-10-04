@@ -1,3 +1,6 @@
+import * as THREE from './three.module.js';
+import { GLTFLoader } from './GLTFLoader.js';
+
 // Render Pug.glb in popup using Three.js
 const container = document.getElementById('dog-3d-container');
 const scene = new THREE.Scene();
@@ -9,7 +12,7 @@ const light = new THREE.HemisphereLight(0xffffff, 0x444444);
 scene.add(light);
 camera.position.z = 2.5;
 
-const loader = new THREE.GLTFLoader();
+const loader = new GLTFLoader();
 loader.load('assets/Pug.glb', function(gltf) {
 	const model = gltf.scene;
 	model.rotation.x = 0;
