@@ -10,7 +10,7 @@ scene.add(light);
 camera.position.z = 70;
 
 const loader = new THREE.STLLoader();
-loader.load('6616.stl', function (geometry) {
+loader.load('assets/6616.stl', function (geometry) {
 	const material = new THREE.MeshPhongMaterial({ color: 0x888888, specular: 0x111111, shininess: 200 });
 	const mesh = new THREE.Mesh(geometry, material);
 	mesh.rotation.x = -0.5 * Math.PI;
