@@ -5,8 +5,8 @@ if (!document.getElementById('dog-3d-overlay')) {
   const overlay = document.createElement('div');
   overlay.id = 'dog-3d-overlay';
   overlay.style.position = 'fixed';
-  overlay.style.right = '20px';
-  overlay.style.bottom = '20px';
+  overlay.style.right = '30px';
+  overlay.style.bottom = '15px';
   overlay.style.width = '320px';
   overlay.style.height = '240px';
   overlay.style.zIndex = '99999';
@@ -26,12 +26,12 @@ if (!document.getElementById('dog-3d-overlay')) {
   scene.add(light);
   camera.position.z = 2.5;
   const loader = new GLTFLoader();
-  loader.load(chrome.runtime.getURL('assets/Pug.glb'), function(gltf) {
+  loader.load(chrome.runtime.getURL('demodog.glb'), function(gltf) {
     const model = gltf.scene;
-    model.rotation.x = 0;
-    model.rotation.y = Math.PI;
-    scene.add(model);
-    animate();
+  model.rotation.x = 0;
+  model.rotation.y = Math.PI;
+  scene.add(model);
+  animate();
   }, undefined, function(error) {
     console.error('Error loading GLB:', error);
   });
