@@ -26,7 +26,7 @@ if (!document.getElementById('dog-3d-overlay')) {
   scene.add(light);
   camera.position.z = 2.5;
   const loader = new GLTFLoader();
-  loader.load(chrome.runtime.getURL('demodog.glb'), function(gltf) {
+  loader.load(chrome.runtime.getURL('assets/demodog.glb'), function(gltf) {
     const model = gltf.scene;
   model.rotation.x = 0;
   model.rotation.y = Math.PI;

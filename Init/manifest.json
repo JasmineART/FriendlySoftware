@@ -31,7 +31,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["assets/Pug.glb", "demodog.glb"],
+  "resources": ["assets/Pug.glb", "assets/demodog.glb"],
       "matches": ["<all_urls>"]
     }
   ]
